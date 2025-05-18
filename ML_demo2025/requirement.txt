@@ -1,0 +1,10 @@
+gradio
+datetime
+sklearn
+pandas
+numpy
+matplotlib
+yfinance
+fredapi
+pathlib
+models

@@ -1,0 +1,56 @@
+.background-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.70;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#custom-button {
+    width: 200px;
+    height: 50px;
+    background: linear-gradient(to right, #ff5f6d, #ffc371);
+    color: white;
+    border: none;
+    transition: transform 0.2s;
+    margin: 0 auto;
+
+    z-index: 1;
+}
+#custom-button:hover {
+    box-shadow: 0 0 10px #ffc371, 0 0 20px #ff5f6d;
+    filter: brightness(1.1);
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.greeting{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    text-align: center;
+    z-index: 1;
+    text-shadow: 0 0 10px #7c0c0c, 0 0 20px #4d5320, 0 0 40px #00f2fe;
+    animation: glow 1.5s ease-in-out infinite alternate;
+}
+.note-box {
+    color: #e23411;
+    padding: 15px;
+    border-left: 6px solid #edece9;
+    border-radius: 8px;
+    font-size: 16px;
+    margin-top: 5px;
+}
+
+@keyframes glow {
+        from {
+            text-shadow: 0 0 10px #fff, 0 0 20px #00f2fe;
+        }
+        to {
+            text-shadow: 0 0 20px #fff, 0 0 40px #00f2fe;
+        }
+    }
+
